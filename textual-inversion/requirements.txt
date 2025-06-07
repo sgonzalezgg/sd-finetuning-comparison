@@ -1,0 +1,14 @@
+torch==2.3.0
+torchao==0.10.0
+torchaudio==2.3.0
+torchdata==0.11.0
+torchsummary==1.5.1
+torchtune==0.6.1
+torchvision==0.18.0
+xformers==0.0.26.post1
+diffusers @ git+https://github.com/huggingface/diffusers.git@73a9d5856f2d7ae3637c484d83cd697284ad3962
+accelerate==1.6.0
+transformers==4.51.3
+ftfy==6.3.1
+
+

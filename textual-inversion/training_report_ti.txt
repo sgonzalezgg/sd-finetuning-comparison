@@ -1,0 +1,26 @@
+Reporte Fine tunning Stable Diffusion mediante Textual Inversion
+----------------------------------------------------------------
+Inicio del proceso: 2025-06-07 13:08:48.065472 
+: 2025-06-07 13:09:08.897420 -- Comienza la configuración del entorno de ejecución
+Configuración completada. Tiempo empleado en establecer la configuración inicial: 163.76072931289673 segundos.
+----------------------------------------------------------------
+: 2025-06-07 13:12:07.314643 -- Comienza la configuración relativa al nuevo concepto a entrenar
+Configuración relativa al nuevo concepto a entrenar completada. 
+Tiempo empleado: 2.7589104175567627 segundos.
+----------------------------------------------------------------
+: 2025-06-07 13:12:10.077414 -- Comienza la configuración del modelo 
+Configuración relativa al modelo completada. 
+Tiempo empleado: 18.659953594207764 segundos.
+----------------------------------------------------------------
+: 2025-06-07 13:12:28.741529 -- Creación del conjunto de entrenamiento 
+Creación del tablón de entrenamiento completada. 
+Tiempo empleado: 0.33381104469299316 segundos.
+----------------------------------------------------------------
+: 2025-06-07 13:12:29.079729 -- Inicio del entrenamiento 
+2025-06-07 13:23:20.129686 -- Fin del entrenamiento.Tiempo empleado: 10.85 minutos.
+Máxima memoria GPU usada: 3.18 GB.
+----------------------------------------------------------------
+: 2025-06-07 13:23:20.265294 -- Guarda el modelo entrenado.
+Fin del guardado.Tiempo empleado: 0.5547447204589844 segundos.
+----------------------------------------------------------------
+2025-06-07 13:23:20.820080 -- Fin del proceso completo. Tiempo transcurido: 14.55 minutos.
