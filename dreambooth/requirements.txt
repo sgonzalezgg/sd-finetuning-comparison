@@ -21,3 +21,4 @@ gradio_client==1.10.1
 natsort==8.4.0
 huggingface-hub==0.32.0
 diffusers==0.33.1
+bitsandbytes==0.45.5
