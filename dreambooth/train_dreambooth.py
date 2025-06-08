@@ -864,7 +864,7 @@ def main(args):
             if global_step > 0 and not global_step % args.save_interval and global_step >= args.save_min_steps:
                 save_weights(global_step)
 
-            if global_step % 10 == 0:
+            if global_step % 100 == 0:
                 log_memory_usage(global_step)
 
             progress_bar.update(1)
