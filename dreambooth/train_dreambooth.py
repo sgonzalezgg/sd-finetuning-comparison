@@ -9,6 +9,8 @@ import os
 from contextlib import nullcontext
 from pathlib import Path
 from typing import Optional
+import datetime
+import psutil
 
 import torch
 import torch.nn.functional as F
@@ -417,6 +419,17 @@ def get_full_repo_name(model_id: str, organization: Optional[str] = None, token:
         return f"{username}/{model_id}"
     else:
         return f"{organization}/{model_id}"
+
+
+def log_memory_usage(step):
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    gpu_mem_used = torch.cuda.memory_allocated() / 1024**2
+    gpu_mem_reserved = torch.cuda.memory_reserved() / 1024**2
+    ram_used = psutil.virtual_memory().used / 1024**3
+    log_line = f"[{now}] Step {step} | GPU Used: {gpu_mem_used:.2f} MB | GPU Reserved: {gpu_mem_reserved:.2f} MB | RAM: {ram_used:.2f} GB"
+    print(log_line)
+    with open("memory_log.txt", "a") as f:
+        f.write(log_line + "\n")
 
 
 def main(args):
@@ -850,6 +863,9 @@ def main(args):
 
             if global_step > 0 and not global_step % args.save_interval and global_step >= args.save_min_steps:
                 save_weights(global_step)
+
+            if global_step % 10 == 0:
+                log_memory_usage(global_step)
 
             progress_bar.update(1)
             global_step += 1
