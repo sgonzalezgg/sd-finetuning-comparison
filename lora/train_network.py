@@ -138,17 +138,6 @@ class NetworkTrainer:
         train_util.sample_images(accelerator, args, epoch, global_step, device, vae, tokenizer, text_encoder, unet)
 
 
-    def log_memory_usage(step):
-        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        gpu_mem_used = torch.cuda.memory_allocated() / 1024**2
-        gpu_mem_reserved = torch.cuda.memory_reserved() / 1024**2
-        ram_used = psutil.virtual_memory().used / 1024**3
-        log_line = f"[{now}] Step {step} | GPU Used: {gpu_mem_used:.2f} MB | GPU Reserved: {gpu_mem_reserved:.2f} MB | RAM: {ram_used:.2f} GB"
-        print(log_line)
-        with open("memory_log.txt", "a") as f:
-            f.write(log_line + "\n")
-
-
     def train(self, args):
         session_id = random.randint(0, 2**32)
         training_started_at = time.time()
@@ -891,6 +880,16 @@ class NetworkTrainer:
             if os.path.exists(old_ckpt_file):
                 accelerator.print(f"removing old checkpoint: {old_ckpt_file}")
                 os.remove(old_ckpt_file)
+
+        def log_memory_usage(step):
+            now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            gpu_mem_used = torch.cuda.memory_allocated() / 1024**2
+            gpu_mem_reserved = torch.cuda.memory_reserved() / 1024**2
+            ram_used = psutil.virtual_memory().used / 1024**3
+            log_line = f"[{now}] Step {step} | GPU Used: {gpu_mem_used:.2f} MB | GPU Reserved: {gpu_mem_reserved:.2f} MB | RAM: {ram_used:.2f} GB"
+            print(log_line)
+            with open("memory_log.txt", "a") as f:
+                f.write(log_line + "\n")
 
         # For --sample_at_first
         self.sample_images(accelerator, args, 0, global_step, accelerator.device, vae, tokenizer, text_encoder, unet)
