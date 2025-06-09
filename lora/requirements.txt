@@ -1,0 +1,32 @@
+torch @ https://download.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+torchao==0.10.0
+torchaudio @ https://download.pytorch.org/whl/cu124/torchaudio-2.6.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+torchdata==0.11.0
+torchmetrics==1.7.1
+torchsummary==1.5.1
+torchtune==0.6.1
+torchvision @ https://download.pytorch.org/whl/cu124/torchvision-0.21.0%2Bcu124-cp311-cp311-linux_x86_64.whl
+accelerate==1.6.0
+transformers==4.51.3
+diffusers==0.33.1
+ftfy==6.3.1
+opencv-contrib-python==4.11.0.86
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
+einops==0.8.1
+pytorch-lightning==2.5.1.post0
+bitsandbytes==0.45.5
+prodigyopt==1.1.2
+lion-pytorch==0.2.3
+tensorboard==2.18.0
+tensorboard-data-server==0.7.2
+safetensors==0.5.3
+altair==5.5.0
+easydict==1.13
+easygui==0.98.3
+toml==0.10.2
+voluptuous==0.15.2
+huggingface-hub==0.31.1
+imagesize==1.4.1
+rich==13.9.4
+triton==3.2.0
