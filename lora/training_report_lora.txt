@@ -1,0 +1,17 @@
+Reporte Fine tunning Stable Diffusion mediante LoRA
+----------------------------------------------------------------
+Inicio del proceso: 2025-06-09 18:58:19.038743 
+: 2025-06-09 18:58:41.075319 -- Comienza la configuración del entorno de ejecución
+Configuración completada. Tiempo empleado en establecer la configuración inicial: 158.35706615447998 segundos.
+----------------------------------------------------------------
+: 2025-06-09 19:01:19.437411 -- Comienza la configuración relativa al nuevo concepto y modelo a entrenar
+Configuración relativa al nuevo concepto y modelo a entrenar completada. 
+Tiempo empleado: 28.90462899208069 segundos.
+----------------------------------------------------------------
+: 2025-06-09 19:01:48.348035 -- Inicio del entrenamiento 
+2025-06-09 19:18:50.586406 -- Fin del entrenamiento.Tiempo empleado: 17.04 minutos.
+----------------------------------------------------------------
+: 2025-06-09 19:18:51.296249 -- Guarda el modelo entrenado.
+Fin del guardado.Tiempo empleado: 196.74139308929443 segundos.
+----------------------------------------------------------------
+2025-06-09 19:22:08.037638 -- Fin del proceso completo. Tiempo transcurido: 23.82 minutos.
