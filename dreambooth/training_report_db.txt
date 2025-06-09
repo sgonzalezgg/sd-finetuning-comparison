@@ -1,0 +1,13 @@
+Reporte Fine tunning Stable Diffusion mediante Dreambooth
+----------------------------------------------------------------
+Inicio del proceso: 2025-06-08 14:53:38.406225 
+: 2025-06-08 14:53:58.905590 -- Comienza la configuración del entorno de ejecución
+Configuración completada. Tiempo empleado en establecer la configuración inicial: 250.14885187149048 segundos.
+----------------------------------------------------------------
+: 2025-06-08 14:58:09.059282 -- Comienza la configuración relativa al nuevo concepto a entrenar
+Configuración relativa al nuevo concepto a entrenar completada. 
+Tiempo empleado: 9.213282585144043 segundos.
+----------------------------------------------------------------
+: 2025-06-08 14:58:18.276957 -- Inicio del entrenamiento 
+2025-06-08 15:28:25.336628 -- Fin del entrenamiento.Tiempo empleado: 30.12 minutos.
+----------------------------------------------------------------
