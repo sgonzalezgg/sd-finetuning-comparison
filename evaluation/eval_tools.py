@@ -13,6 +13,7 @@ def image_grid(imgs, rows, cols):
     return grid
 
 
+clip_score_fn = partial(clip_score, model_name_or_path="openai/clip-vit-base-patch16")
 def calculate_clip_score(images_np, prompts):
     """
     Calcula el CLIP Score promedio entre imágenes y prompts.
