@@ -1,5 +1,8 @@
 # Funciones base para la evaluación manual y automática de Textual Inversión
 # LoRA y DreamBooth
+import torch
+from torch import autocast
+from PIL import Image
 from functools import partial
 from torchmetrics.functional.multimodal import clip_score
 
