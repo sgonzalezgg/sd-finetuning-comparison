@@ -5,6 +5,7 @@ from torch import autocast
 from PIL import Image
 from functools import partial
 from torchmetrics.functional.multimodal import clip_score
+import numpy as np
 
 def image_grid(imgs, rows, cols):
     assert len(imgs) == rows*cols
