@@ -36,7 +36,8 @@ def generate_images(prompts,
                     num_inference_steps=50,
                     guidance_scale=7.5,
                     height=512,
-                    width=512
+                    width=512,
+                    num_rows=1
                     ):
     all_images = []
     prompts_repeated = []
