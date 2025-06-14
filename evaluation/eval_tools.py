@@ -2,6 +2,7 @@
 # LoRA y DreamBooth
 import torch
 from torch import autocast
+import os
 from PIL import Image
 from functools import partial
 from torchmetrics.functional.multimodal import clip_score
@@ -32,6 +33,7 @@ def calculate_clip_score(images_np, prompts):
 
 def generate_images(prompts,
                     pipe,
+                    names_export,
                     negative_prompts = [],
                     n_repeats=3,
                     num_inference_steps=50,
@@ -50,6 +52,8 @@ def generate_images(prompts,
 
         negative_prompt = negative_prompts[i]
         print("Negative prompt: " + negative_prompt)
+
+        name_export = names_export[i]
 
         # Generación de imágenes
         all_images_prompt = []
@@ -75,6 +79,16 @@ def generate_images(prompts,
         # Mostrar grid. las tres imágenes por prompt
         grid = image_grid(all_images_prompt, num_rows, num_samples)
         display(grid)
+
+        # Guarda el trio de imagenes en local
+        output_dir = "generated_images"
+        os.makedirs(output_dir, exist_ok=True)
+
+        grid_filename = f"{output_dir}/{name_export}.png"
+        grid.save(grid_filename)
+        print(f"Grid guardado en: {grid_filename}")
+
+        # Calcula el CLIP
         clip_group = calculate_clip_score(np.array(all_images_prompt),
          [prompt] * n_repeats)
         all_clips.extend([clip_group.item()])
