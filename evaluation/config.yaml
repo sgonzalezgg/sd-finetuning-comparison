@@ -1,0 +1,70 @@
+fidelidad:
+  prompts:
+    - "A pair of <zptx> sneakers, white background, photorealistic, high resolution, studio lighting"
+    - "Close-up of the <zptx> sneaker. Side view, fabric texture visible, macro shot"
+    - "A clean minimalist ad featuring the blue and white <zptx> sneakers. Solid color background. High contrast, product focus, no text, modern design magazine style. Realistic"
+    - "A digital eco-themed ad showing the <zptx> sneakers resting on a moss-covered rock in a futuristic forest, with soft morning light filtering through trees. High detail, green and silver tones, peaceful yet modern aesthetic"
+    - "A digital ad showing the blue and white <zptx> sneaker resting on a beach. Sunset light, high detail, warm tones, peaceful yet modern aesthetic"
+  negative_prompts:
+    - "white sneaker"
+    - ""
+    - "white, blurry, monochrome"
+    - ""
+    - ""
+robustez:
+  prompts:
+    - "A red and white <zptx> running sneaker" # mantiene formas, cambia colores. incluye los colores requeridos,
+    - "Detailed photo of a single <zptx> sneaker on a light yellow acrylic platform. \
+       Studio lighting with soft shadows, realistic texture, professional commercial aesthetic" # una zapatilla
+    - "Professional studio photo of lots of <zptx> running sneakers arranged in a circle, \
+       soft shadows, realistic, color-blocking composition" # muchas zapatillas
+    - "A top-down view of a <zptx> training sneaker placed on lush green grass, realistic lighting, \
+       soft shadows, high resolution" # angulo concreto
+  negative_prompts:
+    - "blue, green, dark, low contrast, legs"
+    - "blurry, deformed, low resolution, cropped, watermark, extra limbs, legs"
+    - "blurry, deformed, low resolution, cropped, extra limbs, legs"
+    - "limbs, legs"
+estilos:
+  prompts:
+    - "Futuristic <zptx> sneaker glowing with neon pink and cyan circuit patterns,\
+       rain-soaked Tokyo street at night, cyberpunk aesthetic, cinematic lighting" # Estilo: "Cyberpunk Neon"
+    - "A worn <zptx> sneaker on a wooden bench, 1970s Polaroid photo with faded colors,\
+       light leaks, film grain, vignette effect" #  "Fotografía Vintage Polaroid"
+    - "silhouette of a <zptx> sneaker on pastel yellow background, \
+       minimalist vector art, 2D design" # silueta minimalista
+    - "Impressionist oil painting of a <zptx> sneaker in the style of Claude Monet,\
+       loose visible brushstrokes, soft pastel color palette (lavender, mint green, peach)" # Estilo artistico
+    - "A <zptx> sneaker in pencil sketch style, grayscale, detailed contours" # Estilo: "Dibujo, balco y negro"
+  negative_prompts:
+    - "photorealistic, persons, people, daylight, matte colors, rustic, vintage"
+    - "photorealistic, 8K, HDR, crisp, modern, (oversharpened:1.2)"
+    - "3D, realistic, shadows, watermark, (detailed:1.3)"
+    - "photorealistic, sharp edges, hyper-detailed, (digital art:1.4)"
+    - ""
+creatividad:
+  prompts:
+    - "A creative ad featuring <zptx> running sneakers" # libertad total
+    - "A poster for a city marathon featuring the <zptx> sneaker in the foreground, \
+       Behind them is a blurred city skyline with tall modern buildings. \
+       Flat pastel colors, minimal shading, cartoon style" # poster para un maraton
+    - "A social media ad highlighting the <zptx> sneaker floating in a dark starry sky. \
+       Glowing stars and galaxies in the background. \
+       Dramatic composition, cinematic atmosphere, soft textures." # galaxia
+    - "A digital ad of the <zptx> sneakers with the text 'BORN TO RUN' in bold black letters. \
+       Product focus, studio lighting, high contrast" # con texto
+    - "Close-up of the <zptx> sneaker splashing into water, dynamic water splash, \
+       detailed reflection of the shoe and city skyline, cinematic lighting, overcast sky, \
+       photorealistic style, dramatic focus" # agua y reflejos
+    - "A digital ad for a <zptx> training sneakers in a background of flames and fire. \
+       Dramatic composition, cinematic atmosphere"
+  negative_prompts:
+    - ""
+    - "no shoes, people"
+    - "no shoes, people, ground, daytime, text"
+    - "legs, limbs, full body visible, people"
+    - "blurry details, no reflection, dry ground, unrealistic water, bad anatomy, \
+       distorted shoe, cartoon style, out of focus, generic brand"
+    - ""
+  
+
