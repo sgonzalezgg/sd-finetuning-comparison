@@ -1,6 +1,7 @@
 # Funciones base para la evaluación manual y automática de Textual Inversión
 # LoRA y DreamBooth
 from functools import partial
+from torchmetrics.functional.multimodal import clip_score
 
 def image_grid(imgs, rows, cols):
     assert len(imgs) == rows*cols
