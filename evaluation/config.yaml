@@ -6,8 +6,8 @@ fidelidad:
     - "A digital eco-themed ad showing the <zptx> sneakers resting on a moss-covered rock in a futuristic forest, with soft morning light filtering through trees. High detail, green and silver tones, peaceful yet modern aesthetic"
     - "A digital ad showing the blue and white <zptx> sneaker resting on a beach. Sunset light, high detail, warm tones, peaceful yet modern aesthetic"
   negative_prompts:
-    - "white sneaker"
-    - ""
+    - "white sneaker, legs, limbs"
+    - "legs, limbs"
     - "white, blurry, monochrome"
     - ""
     - ""
